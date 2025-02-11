@@ -11,21 +11,6 @@ header h1 {
   font-size: 1rem;
   margin: 0.5rem;
 }
-header button {
-  margin: 0.5rem;
-  background: none;
-  color: var(--text-color);
-  border-radius: 5%;
-  font-size: 0.85rem;
-  padding: 0.5rem;
-  cursor: pointer;
-  border: 1px, solid, var(--text-color);
-}
-header button:hover {
-  background: var(--text-color);
-  color: var(--extra-color);
-  transition: background 0.3s;
-}
 
 .dropdown {
   position: relative;
@@ -35,6 +20,7 @@ header button:hover {
 .dropdown-btn {
   background: var(--primary-color);
   border: 1px solid var(--text-color);
+  color: var(--text-color);
   padding: 10px 15px;
   border-radius: 20px;
   display: flex;
@@ -76,7 +62,7 @@ header button:hover {
 
 .dropdown-menu button {
   color: var(--extra-color);
-  width: 85%;
+  width: 100%;
   background: none;
   border: none;
   padding: 10px;

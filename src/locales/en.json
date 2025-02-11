@@ -1,6 +1,8 @@
 {
   "header": "Hector Rodriguez Portfolio",
-  "welcome": "Welcome to our application",
   "change_language": "Change language",
-  "about_me": "Hi, my name is Hector"
+  "download": "Download CV",
+  "degree": "Computer Systems Engineer | Front-end Developer",
+  "about_me": "Hi, my name is Hector. I'm a systems engineer focused on front-end web development. I'm interested in practicing my knowledge in transforming ideas into functional digital experiences, as well as continuing to improve these skills and learning new approaches along the way.",
+  "contact": "Contact"
 }
