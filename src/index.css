@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --primary-color: #260f06;
+  --background-color: #a57865;
+  --text-color: #f2d9ce;
+  --extra-color: #683924;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lora;
+  background-color: var(--background-color);
+}
