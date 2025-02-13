@@ -64,9 +64,6 @@
 }
 
 @media (min-width: 481px) {
-  section {
-    padding: 1rem 1rem;
-  }
   .about_me_container {
     padding: 2rem;
   }
@@ -89,9 +86,6 @@
 }
 
 @media (min-width: 1024px) {
-  section {
-    padding: 1rem 3rem;
-  }
   .about_me_container {
     padding: 2rem;
   }
