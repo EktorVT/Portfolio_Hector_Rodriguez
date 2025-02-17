@@ -7,7 +7,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 1rem;
 }
 
 .about_me_container img {
@@ -15,7 +16,7 @@
   height: auto;
   border-radius: 50%;
   border: 1px solid var(--text-color);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .text-content {
@@ -54,7 +55,7 @@
   border-radius: 20px;
   cursor: pointer;
   transition: background 0.3s;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   font-weight: 500;
 }
 .about_me_cta:hover {
