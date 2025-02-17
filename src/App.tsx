@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 import "./i18n";
 import AboutMe from "./components/AboutMe/AboutMe";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <section>
         <AboutMe />
+        <Skills />
       </section>
 
       <Footer />
