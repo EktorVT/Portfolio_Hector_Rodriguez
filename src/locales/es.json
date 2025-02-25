@@ -6,5 +6,17 @@
   "about_me": "Hola, mi nombre es Héctor. Soy ingeniero de sistemas enfocado en desarrollo web front-end. Estoy interesado en poner en práctica mis conocimientos en la transformación de ideas en experiencias digitales funcionales, así como en seguir mejorando estas habilidades y aprendiendo nuevos enfoques en el camino",
   "contact": "Contacto",
   "skills": "Habilidades",
-  "technologies": "Tecnologías y Herramientas"
+  "technologies": "Tecnologías y Herramientas",
+  "work_title": "Experiencia Laboral",
+  "work1_name": "Docente de Desarrollo Web",
+  "work1_place": "Escuela preparatoria de Salinas, Salinas de Hgo.",
+  "work1_date": "Febrero 2022 - Junio 2022",
+  "work1_description1": "Impartición de clases teóricas y prácticas sobre desarrollo web a nivel preparatoria.",
+  "work1_description2": "Enseñanza de fundamentos de HTML, CSS y JavaScript mediante proyectos prácticos.",
+  "work2_name": "Desarrollador Outsourcing",
+  "work2_place": "Trabajo Remoto",
+  "work2_date": "Mayo 2023 - Actualidad",
+  "work2_description1": "Desarrollo y mantenimiento de aplicaciones web y móviles, implementando arquitecturas eficientes y CI/CD en GitHub Actions.",
+  "work2_description2": "Optimización de contenedores Docker para mejorar la escalabilidad y despliegue de aplicaciones.",
+  "work2_description3": "Integración de APIs con NestJS y desarrollo de interfaces dinámicas con React Native."
 }

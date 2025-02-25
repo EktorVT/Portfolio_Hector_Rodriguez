@@ -6,5 +6,17 @@
   "about_me": "Hi, my name is Hector. I'm a systems engineer focused on front-end web development. I'm interested in practicing my knowledge in transforming ideas into functional digital experiences, as well as continuing to improve these skills and learning new approaches along the way.",
   "contact": "Contact",
   "skills": "Skills",
-  "technologies": "Technologies and tools"
+  "technologies": "Technologies and tools",
+  "work_title": "Work Experience",
+  "work1_name": "Web Development Teacher",
+  "work1_place": "Salinas High School, Salinas de Hgo.",
+  "work1_date": "February 2022 - June 2022",
+  "work1_description1": "Teaching theoretical and practical classes on web development at the high school level.",
+  "work1_description2": "Teaching HTML, CSS, and JavaScript fundamentals through hands-on projects.",
+  "work2_name": "Outsourcing Developer",
+  "work2_place": "Home Office",
+  "work2_date": "May 2023 - Present",
+  "work2_description1": "Development and maintenance of web and mobile applications, implementing efficient architectures and CI/CD in GitHub Actions.",
+  "work2_description2": "Optimizing Docker containers to improve application scalability and deployment.",
+  "work2_description3": "API integration with NestJS and development of dynamic interfaces with React Native."
 }

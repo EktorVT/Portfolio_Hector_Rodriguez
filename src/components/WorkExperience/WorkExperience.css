@@ -1,0 +1,112 @@
+.work_experience_container {
+  background-color: var(--extra-color);
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 1rem;
+}
+
+.work_experience_container h1 {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #ffcc99;
+}
+
+.work {
+  width: 90%;
+  margin-bottom: 1rem;
+  background-color: #754b32;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.work h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.work_company {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.work_description_icon {
+  font-size: 2rem;
+}
+.work_description {
+  color: var(--text-color);
+  margin: 0.9rem 0;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.work_technologies {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 481px) {
+  .work_experience_container {
+    padding: 2rem;
+  }
+  .work_experience_container h1 {
+    font-size: 1.5rem;
+  }
+  .work h3 {
+    font-size: 1.2rem;
+  }
+  .work_description_icon {
+    font-size: 1.7rem;
+  }
+  .work_description {
+    font-size: 0.9rem;
+  }
+  .work_technologies {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .work_experience_container {
+    padding: 2rem;
+  }
+  .work_experience_container h1 {
+    font-size: 2rem;
+  }
+  .work h3 {
+    font-size: 1.3rem;
+  }
+  .work_company {
+    font-size: 1.1rem;
+  }
+  .work_description_icon {
+    font-size: 1rem;
+  }
+  .work_description {
+    font-size: 1rem;
+  }
+  .work_technologies {
+    font-size: 1rem;
+  }
+}
