@@ -10,7 +10,7 @@ function Skill({ name, title, src }: SkillProps) {
   return (
     <div className="skill_container">
       <h2 className="skill_text">
-        <img src={src} title={title} className="skill_logo" />
+        <img src={src} title={title} className="skill_logo" loading="lazy" />
         <br />
         {name}
       </h2>

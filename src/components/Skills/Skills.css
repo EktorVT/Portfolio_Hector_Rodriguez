@@ -1,16 +1,4 @@
-.skills_container {
-  background-color: var(--extra-color);
-  padding: 1rem;
-  border-radius: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  margin-bottom: 1rem;
-}
-
-.skills_container h1 {
+.skills_title {
   margin-top: 0;
   width: 100%;
   text-align: center;
@@ -26,10 +14,7 @@
 }
 
 @media (min-width: 481px) {
-  .skills_container {
-    padding: 2rem;
-  }
-  .skills_container h1 {
+  .skills_title {
     font-size: 1.5rem;
   }
   .skills_list {
@@ -38,10 +23,7 @@
 }
 
 @media (min-width: 1024px) {
-  .skills_container {
-    padding: 2rem;
-  }
-  .skills_container h1 {
+  .skills_title {
     font-size: 2rem;
   }
   .skills_list {

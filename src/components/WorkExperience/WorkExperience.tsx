@@ -1,5 +1,6 @@
 import "./WorkExperience.css";
 import { useTranslation } from "react-i18next";
+import Container from "../Container/Container";
 import {
   FaLaptopCode,
   FaMapMarkerAlt,
@@ -23,8 +24,8 @@ import {
 function WorkExperience() {
   const { t } = useTranslation();
   return (
-    <div className="work_experience_container">
-      <h1>{t("work_title")}</h1>
+    <Container>
+      <h1 className="work_experience_title">{t("work_title")}</h1>
 
       <div className="work">
         <h3>
@@ -80,7 +81,7 @@ function WorkExperience() {
           <FaLinux title="Linux" /> <span>WSL</span>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
 

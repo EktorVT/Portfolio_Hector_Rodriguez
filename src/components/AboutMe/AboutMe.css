@@ -1,17 +1,4 @@
-.about_me_container {
-  background-color: var(--extra-color);
-  padding: 1rem;
-  border-radius: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  margin-bottom: 1rem;
-}
-
-.about_me_container img {
+.about_me_img {
   width: 6rem;
   height: auto;
   border-radius: 50%;
@@ -31,6 +18,17 @@
   font-size: 1.3rem;
   color: var(--title-color);
 }
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .text-content h2 {
   font-weight: 400;
   margin-top: -0.5rem;
@@ -65,10 +63,7 @@
 }
 
 @media (min-width: 481px) {
-  .about_me_container {
-    padding: 2rem;
-  }
-  .about_me_container img {
+  .about_me_img {
     width: 6rem;
   }
   .text-content h1 {
@@ -87,10 +82,7 @@
 }
 
 @media (min-width: 1024px) {
-  .about_me_container {
-    padding: 2rem;
-  }
-  .about_me_container img {
+  .about_me_img {
     width: 8rem;
   }
   .text-content h1 {
