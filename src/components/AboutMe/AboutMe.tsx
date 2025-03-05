@@ -43,7 +43,11 @@ function AboutMe() {
 
   return (
     <Container>
-      <img src="../src/images/perfil.jpg" alt="" className="about_me_img" />
+      <img
+        src="/Portfolio_Hector_Rodriguez/perfil.jpg"
+        alt=""
+        className="about_me_img"
+      />
       <div className="text-content">
         <h1>
           {displayedText}
@@ -52,10 +56,7 @@ function AboutMe() {
         <h2>{t("degree")}</h2>
       </div>
       <p className="about_me_description">{t("about_me")}</p>
-      <a
-        href="https://drive.google.com/file/d/1GABC7AI6Q7nZNEO7uFd-VE3E2uCv3hLH/view?usp=sharing"
-        target="_blank"
-      >
+      <a href={t("cv")} target="_blank" rel="noopener noreferrer">
         <button className="about_me_cta">{t("download")}</button>
       </a>
     </Container>

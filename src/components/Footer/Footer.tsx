@@ -38,12 +38,12 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              +52 4961245077
+              +52 496 124 5077
             </a>
             <FaCopy
               className="copy-icon"
               title="Copy"
-              onClick={() => handleCopy("+52 4961240577", "whatsapp")}
+              onClick={() => handleCopy("+524961245077", "whatsapp")}
             />
             {copied === "whatsapp" && (
               <span className="copied-message">{t("copied")}</span>
