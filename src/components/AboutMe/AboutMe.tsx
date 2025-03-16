@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import "./AboutMe.css";
 import { useState, useEffect } from "react";
 import Container from "../Container/Container";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 function AboutMe() {
   const { t } = useTranslation();
@@ -56,8 +57,18 @@ function AboutMe() {
         <h2>{t("degree")}</h2>
       </div>
       <p className="about_me_description">{t("about_me")}</p>
-      <a href={t("cv")} target="_blank" rel="noopener noreferrer">
-        <button className="about_me_cta">{t("download")}</button>
+      <p className="about_me_description">
+        <FaMapMarkerAlt />
+        Salinas de Hidalgo, San Luis Potosí, México.
+        <span> {t("about_me_location")} 🌍</span>
+      </p>
+      <a
+        href={t("cv")}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="about_me_cta"
+      >
+        {t("download")}
       </a>
     </Container>
   );
