@@ -9,7 +9,7 @@
 .project {
   width: 20rem;
   max-width: 500px;
-  background-color: #754b32;
+  background-color: var(--card-color);
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
