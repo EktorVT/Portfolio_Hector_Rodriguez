@@ -16,6 +16,7 @@
   text-align: center;
   transition: transform 0.3s ease-in-out;
   margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .project:hover {
@@ -34,18 +35,19 @@
   gap: 0.3rem;
 }
 
-.project_image {
+.project_img_container {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin: 10px 0;
-  aspect-ratio: 16/9;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  transition: transform 0.3s ease-in-out;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
 }
 
-.project_image:hover {
-  transform: scale(1.03);
+.project_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project_links {

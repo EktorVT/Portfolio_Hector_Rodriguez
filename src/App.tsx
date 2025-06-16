@@ -7,22 +7,21 @@ import Skills from "./components/Skills/Skills";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
+import { ModalProvider } from "./context/ModalContext/ModalContext";
 
 function App() {
   return (
-    <>
+    <ModalProvider>
       <Header />
-      <section>
+      <main>
         <AboutMe />
-
         <Skills />
         <Portfolio />
         <WorkExperience />
         <Contact />
-      </section>
-
+      </main>
       <Footer />
-    </>
+    </ModalProvider>
   );
 }
 

@@ -3,9 +3,11 @@ import "./AboutMe.css";
 import { useState, useEffect } from "react";
 import Container from "../Container/Container";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { useModal } from "../../context/ModalContext/ModalContext";
 
 function AboutMe() {
   const { t } = useTranslation();
+  const { openModal } = useModal();
 
   const fullText = "Jose Hector Rodriguez Rodriguez";
   const [displayedText, setDisplayedText] = useState("");
@@ -42,12 +44,36 @@ function AboutMe() {
     }
   }, [charIndex, isDeleting]);
 
+  const profileImageUrl: string = "/Portfolio_Hector_Rodriguez/perfil.jpg";
+
+  const handleImageClick = (): void => {
+    openModal(
+      <img
+        src={profileImageUrl}
+        alt={t(
+          "alt_profile_large",
+          "Perfil ampliado de Jose Hector Rodriguez Rodriguez"
+        )}
+      />
+    );
+  };
+
   return (
     <Container>
       <img
-        src="/Portfolio_Hector_Rodriguez/perfil.jpg"
-        alt=""
+        src={profileImageUrl}
+        alt={t(
+          "alt_profile_thumb",
+          "Foto de perfil de Jose Hector Rodriguez Rodriguez"
+        )}
         className="about_me_img"
+        onClick={handleImageClick}
+        style={{ cursor: "pointer" }}
+        // Añadir tabIndex para accesibilidad de teclado si es interactiva
+        tabIndex={0}
+        onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) => {
+          if (e.key === "Enter" || e.key === " ") handleImageClick();
+        }}
       />
       <div className="text-content">
         <h1>
@@ -62,6 +88,7 @@ function AboutMe() {
         Salinas de Hidalgo, San Luis Potosí, México.
         <span> {t("about_me_location")} 🌍</span>
       </p>
+      <h1></h1>
       <a
         href={t("cv")}
         target="_blank"
