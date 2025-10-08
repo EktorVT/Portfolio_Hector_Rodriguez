@@ -12,7 +12,7 @@ export const projects: Project[] = [
     name: "project1",
     description: "project1_description",
     technologies: ["Vite", "TypeScript", "CSS"],
-    image: "/Portfolio_Hector_Rodriguez/portfolio.png",
+    image: "/Portfolio_Hector_Rodriguez/portfolio.webp",
     website: "https://ektorvt.github.io/Portfolio_Hector_Rodriguez/",
     github: "https://github.com/EktorVT/portfolio"
   },
