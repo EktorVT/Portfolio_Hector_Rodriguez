@@ -9,20 +9,20 @@
   }
 }
 
-section {
+main {
   padding: 0.4rem;
   background-color: var(--background-color);
   animation: fadeInUp 1s ease-in-out;
 }
 
 @media (min-width: 481px) {
-  section {
+  main {
     padding: 1rem 1rem;
   }
 }
 
 @media (min-width: 1024px) {
-  section {
+  main {
     padding: 1rem 3rem;
   }
 }

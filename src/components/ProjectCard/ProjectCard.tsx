@@ -21,10 +21,11 @@ function ProjectCard({
   const { t } = useTranslation();
   return (
     <div className="project">
-      <h3>{t(name)}</h3>
-      <img src={image} alt={name} title={t(name)} className="project_image" />
+      <h3>{t(name)}</h3>-
+      <div className="project_img_container">
+        <img src={image} alt={name} title={t(name)} className="project_image" />
+      </div>
       <p>{t(description)}</p>
-
       <div className="project_links">
         {website && (
           <a href={website} target="_blank" rel="noopener noreferrer">
@@ -37,7 +38,6 @@ function ProjectCard({
           </a>
         )}
       </div>
-
       <div className="project_technologies">
         {technologies.map((tech, index) => (
           <span key={index} title={tech}>

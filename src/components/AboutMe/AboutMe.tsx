@@ -7,7 +7,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 function AboutMe() {
   const { t } = useTranslation();
 
-  const fullText = "Jose Hector Rodriguez Rodriguez";
+  const fullText = "José Héctor Rodríguez Rodríguez";
   const [displayedText, setDisplayedText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -42,11 +42,16 @@ function AboutMe() {
     }
   }, [charIndex, isDeleting]);
 
+  const profileImageUrl: string = "/Portfolio_Hector_Rodriguez/perfil.webp";
+
   return (
     <Container>
       <img
-        src="/Portfolio_Hector_Rodriguez/perfil.jpg"
-        alt=""
+        src={profileImageUrl}
+        alt={t(
+          "alt_profile_thumb",
+          "Foto de perfil de Jose Hector Rodriguez Rodriguez"
+        )}
         className="about_me_img"
       />
       <div className="text-content">

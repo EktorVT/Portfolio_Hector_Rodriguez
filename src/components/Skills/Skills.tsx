@@ -10,11 +10,16 @@ const skills = [
     title: "React JS"
   },
   {
+    name: "Nest js",
+    src: "/Portfolio_Hector_Rodriguez/nestjs.webp",
+    title: "Nest JS"
+  },
+  {
     name: "HTML",
     src: "/Portfolio_Hector_Rodriguez/html-5.webp",
     title: "HTML 5"
   },
-  { name: "CSS", src: "/Portfolio_Hector_Rodriguez/css3.webp", title: "CSS" },
+
   {
     name: "JS",
     src: "/Portfolio_Hector_Rodriguez/js.webp",
