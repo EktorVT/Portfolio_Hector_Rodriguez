@@ -8,6 +8,7 @@ interface ProjectCardProps {
   image: string;
   website?: string;
   github?: string;
+  onClick: () => void;
 }
 
 function ProjectCard({
@@ -16,11 +17,12 @@ function ProjectCard({
   technologies,
   image,
   website,
-  github
+  github,
+  onClick
 }: ProjectCardProps) {
   const { t } = useTranslation();
   return (
-    <div className="project">
+    <div className="project" onClick={onClick}>
       <h3>{t(name)}</h3>-
       <div className="project_img_container">
         <img src={image} alt={name} title={t(name)} className="project_image" />
@@ -28,12 +30,22 @@ function ProjectCard({
       <p>{t(description)}</p>
       <div className="project_links">
         {website && (
-          <a href={website} target="_blank" rel="noopener noreferrer">
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
             <FaExternalLinkAlt title="Link" />
           </a>
         )}
         {github && (
-          <a href={github} target="_blank" rel="noopener noreferrer">
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
             <FaGithub title="GitHub" />
           </a>
         )}
