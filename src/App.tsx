@@ -8,8 +8,10 @@ import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import { ModalProvider } from "./context/ModalContext/ModalContext";
+import { useHtmlLang } from "./hooks/useHtmlLang";
 
 function App() {
+  useHtmlLang();
   return (
     <ModalProvider>
       <Header />
